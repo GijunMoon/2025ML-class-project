@@ -450,7 +450,7 @@ def main():
                       f"위치: {result['latitude']:.4f}, {result['longitude']:.4f}")
                 
     # 최적화 결과 시각화
-    scenario_results_dict = {}
+    scenario_results_dict = {} #타입 힌트 추가
     for scenario in scenarios:
         scenario_results = [r for r in all_results if r['scenario'] == scenario.id]
         if scenario_results:
